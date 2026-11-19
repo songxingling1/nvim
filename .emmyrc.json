@@ -1,0 +1,37 @@
+{
+  "$schema": "https://raw.githubusercontent.com/EmmyLuaLs/emmylua-analyzer-rust/refs/heads/main/crates/emmylua_code_analysis/resources/schema.json",
+  "runtime": {
+    "version": "LuaJIT",
+    "requirePattern": [
+      "?.lua",
+      "?/init.lua",
+      "lua/?/init.lua",
+      "lua/?.lua",
+      "?/lua/?.lua",
+      "?/lua/?/init.lua"
+    ]
+  },
+  "workspace": {
+    "enableReindex": false,
+    "preloadFileSize": 5000,
+    "ignoreGlobs": [
+      "**/*_spec.lua",
+      "**/test/**",
+      "**/tests/**",
+      "**/.git/**"
+    ],
+    "library": [
+      "$VIMRUNTIME",
+      "$HOME/.local/share/nvim/lazy/blink.cmp",
+      "$HOME/.local/share/nvim/lazy/blink.indent",
+      "$HOME/.local/share/nvim/lazy/blink.lib",
+      "$HOME/.local/share/nvim/lazy/blink.pairs",
+      "$HOME/.local/share/nvim/lazy/LazyVim",
+      "$HOME/.local/share/nvim/lazy/lazy.nvim",
+      "$HOME/.local/share/nvim/lazy/noice.nvim",
+      "$HOME/.local/share/nvim/lazy/snacks.nvim",
+      "$HOME/.local/share/nvim/lazy/lualine.nvim",
+      "$HOME/.local/share/nvim/lazy/catppuccin"
+    ]
+  }
+}

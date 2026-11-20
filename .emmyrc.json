@@ -3,12 +3,11 @@
   "runtime": {
     "version": "LuaJIT",
     "requirePattern": [
-      "?.lua",
-      "?/init.lua",
       "lua/?/init.lua",
       "lua/?.lua",
-      "?/lua/?.lua",
-      "?/lua/?/init.lua"
+      "lua/?.nvim/init.lua",
+      "?.lua",
+      "?/init.lua"
     ]
   },
   "workspace": {
